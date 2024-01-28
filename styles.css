@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-image: url(./assets/image/dinero.jpg);
+    background-size: cover;
+    height: 100vh;
+    font-size: 16px;
+    background-position: center center;
+    
+}
+
+h2{
+    display: block;
+    margin: 4% auto; 
+    text-align: center;
+    border: 2px dashed #96df9e;
+    background-color: #96df9e;
+    width: 100%;
+    padding: 10px; 
+
+}
+
+h3{
+    background-color: rgba(250, 235, 215, 0.445);
+    display: block;
+    margin: 4% auto; 
+    text-align: center;
+    border: 2px solid #96df9e;
+    width: 80%;
+    padding: 10px; 
+}
+
+#listado{
+    background-color: rgba(250, 235, 215, 0.445);
+    display: block;
+    margin: 4% auto; 
+    text-align: center;
+    border: 2px solid #96df9e;
+    width: 80%;
+    padding: 10px; 
+}
+
+#cotiza{
+    display: block;
+    margin: 4% auto; 
+    text-align: center;
+    border: 2px dashed #96df9e;
+    background-color: #96df9e;
+    width: 80%;
+    padding: 10px; 
+}
+
+#botonesContainer {
+    display: flex;
+    justify-content: center;
+    gap: 3%; /* Espacio entre los botones */
+    margin-top: 10px; /* Espacio encima de los botones */
+}
+
+button{
+    width: 25%;
+    border-radius: 10px;
+    border-color: #96df9e;
+    background-color: #96df9e;
+    padding: .5%;
+    font-size: 1em;
+}
+
+form {
+    width: 80%;
+    margin: auto;
+}
+
+
+#resultado{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    background-color: #b4c1b4;
+    width: 50%;
+    margin: 2% auto;
+    text-align: center;
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 560px) {
+    button {
+      font-size: .8em;
+      width: 40%;
+    }
+
+    body{
+        background-image: url(./assets/image/dinero.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        font-size: 16px;
+        
+    }
+
+}
+
+.verde{
+    background-color: #96df9e;
+}

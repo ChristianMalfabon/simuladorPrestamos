@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presta fácil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div id="container" >
+        <h2 id="cotiza">Cotiza tu préstamo</h2>
+
+        <form id="formulario">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo" required>
+                    <label for="nombre">Nombre Completo</label>
+                </div>
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="cantidad" placeholder="Ingresa la cantidad" required>
+                    <label for="cantidad">Cantidad prestada MXN (máximo 3,000,000)</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="plazo" placeholder="Ingresa el plazo" required>
+                    <label for="plazo">Plazo (12, 18 o 24 meses):</label>
+                </div>
+                
+                <hr>
+            
+        </form>
+        <div id="botonesContainer">
+            <button id="boton" type="button">Calcular Mensualidad</button>
+            <button type="button" id="limpiar">Limpiar</button>
+        </div>
+        <div  class="verde" id="resultado"></div>
+
+        <h3>Otros clientes satisfechos</h3>
+
+        <li id="listado"></li>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
